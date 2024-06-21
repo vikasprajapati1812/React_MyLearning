@@ -1,0 +1,20 @@
+{
+  "name": "2.01-jsx-and-babel",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./script.js -d lib --source-maps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.24.6"
+  }
+}

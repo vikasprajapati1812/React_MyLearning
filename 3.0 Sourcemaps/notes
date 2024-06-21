@@ -1,0 +1,30 @@
+ Source maps are used so that the debugging become the easier and our development become easier.
+
+ 2. if we download any project from the github then there should be no any node modules folder in it so we have to made it first , so for that we have to  run a command 
+ 
+ npm i or npm install.
+
+
+ after that when we run 000     npm run build then it will run
+ yeh kehta hai babel ka CLI tools jo ki node module me hai.---->> se ki script.js ko lelo  aur lib folder me dal do
+
+
+
+befor that whem we are using the cdn link of babel it bydefault using the souce-maps
+ 3. using two ways we can create the source maps
+     1. we have to add  
+ --source-maps in the build of package.json 
+after that when we run 
+
+    npm run build 
+    
+then it will create a file in the lib folder named script.js.maps
+ and in the script.js file it add a comment named like----
+
+//# sourceMappingURL=script.js.map
+
+
+     2. in the .babelrc we have to add a key value pair named
+     "sourceMaps":true
+
+     after that when we run the npm build command it will generate a script.js.maps file in lib and also a comment in the script.js file in last
