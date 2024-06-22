@@ -1,0 +1,64 @@
+
+
+
+
+
+
+1.first of all we need to run 
+npm init -y           ----> it will create a package.json file and start a new npm project
+
+2. For the big projects its not a right way to use CDN links for react
+so we need to install react through npm
+npm i react react-dom
+this will create a dependencies in the package.json and where react and react-dom are there.
+and some files like --> package-lock.json and  a folder of node modules are created.
+
+* nodemodules are not known(recognise) by the browser.
+Node modules are for the servers.
+React is client site library not for the browser it is for the server.
+
+so to access the react code we use the parcel.
+
+so run this on terminal
+
+npm install --save-dev parcel 
+
+bcoz of this there in package.json a parcel dependencies are also created
+due to this the node modules become large
+which also include the react folder and parcel folder
+in parcel folder there in package.json file which has devdependencies which consist of the babel.
+
+
+Now we use parcel as it is installed
+npx means execute using the npm
+
+
+we write 
+in scripts of package.json in key value pairs
+"start":"parcel index.html"
+ and then run on terminal the below code
+
+npx parcel (then give entry point of your file ) which is index.html in this case
+
+npx parcel index.html
+
+it will add a dist folder in it which contain the index.html which is connected with its new script.js file  and also have a script.js.map file
+it will start a local server 
+now open the localhost link and you will see that the error is gone of react
+
+parcel is actually a bundler
+
+
+
+
+
+npx parcel build index.html
+
+if it is run it shows error and says remove the main : index.js from the package .json
+ if we remove and rerun the above code 
+ then more files are created in the dist folder and now there will be the minified code which are production build ready.
+
+
+
+ * we can remove the console.log when the project is moved to production
+ for that we have to create a babel file and write some code which we can get from google.
