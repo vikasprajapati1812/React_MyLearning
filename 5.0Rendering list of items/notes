@@ -1,0 +1,12 @@
+first get 4 files as starter code from github
+Now since it doesnot have the node modules we have to run
+npm i or npm install
+
+1 .after that in scripts of package.json we have to add a key value pair
+"start:"parcel index.html"
+2. then run code
+npm start
+
+it will creaete a dist folder in it and also a folder of .parcel-cache
+
+3.
